@@ -1,13 +1,15 @@
 {
   "name": "ytops",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "private": true,
   "type": "module",
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server.js",
     "test": "node --test",
-    "check": "node --check server.js"
+    "check": "node --check server.js",
+    "check:frontend": "node --check public/app.js",
+    "check:all": "npm run check && npm run check:frontend && npm test"
   },
   "engines": {
     "node": ">=20"
