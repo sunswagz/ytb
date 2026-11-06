@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>China → USA YouTube Intelligence Hub</title>
+<style>
+:root{--bg:#0b1020;--panel:#121a2d;--panel2:#172238;--line:#26334d;--text:#edf3ff;--muted:#9aabc7;--cyan:#63d5e8;--blue:#7c9cff;--green:#6dd6a3;--amber:#f4c36a;--red:#ff8585;--radius:16px}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(1000px 500px at 80% -10%,#1c3152 0%,transparent 60%),var(--bg);color:var(--text);font:14px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
+button,input,textarea,select{font:inherit}button{cursor:pointer}.shell{display:grid;grid-template-columns:248px 1fr;min-height:100vh}.side{background:#0d1527;border-right:1px solid var(--line);padding:22px 14px;position:sticky;top:0;height:100vh;overflow:auto}.brand{display:flex;gap:11px;align-items:center;padding:4px 9px 22px}.logo{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--cyan),var(--blue));display:grid;place-items:center;color:#071321;font-weight:900;font-size:17px}.brand strong{display:block;font-size:13px;letter-spacing:.2px}.brand small{color:var(--muted);font-size:11px}.navlabel{color:#6f82a3;font-size:10px;text-transform:uppercase;letter-spacing:1.3px;padding:13px 10px 7px}.nav button{width:100%;border:0;background:transparent;color:#aebbd1;padding:10px 12px;border-radius:10px;text-align:left;display:flex;gap:11px;align-items:center;margin:2px 0}.nav button:hover,.nav button.active{background:#1b2a45;color:white}.nav .ico{width:18px;text-align:center;color:var(--cyan)}.sidefoot{border-top:1px solid var(--line);margin-top:22px;padding:16px 9px;color:var(--muted);font-size:11px}.main{min-width:0;padding:26px clamp(16px,3vw,42px) 60px;max-width:1600px;width:100%;margin:auto}.top{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:24px}.eyebrow{color:var(--cyan);font-size:11px;letter-spacing:1.4px;text-transform:uppercase;font-weight:700}.top h1{font-size:25px;margin:3px 0 0;letter-spacing:-.5px}.top p{margin:4px 0 0;color:var(--muted)}.actions{display:flex;gap:8px;flex-wrap:wrap}.btn{border:1px solid var(--line);background:var(--panel2);color:var(--text);padding:9px 13px;border-radius:10px}.btn.primary{background:linear-gradient(135deg,#4cc8dc,#7d9bff);color:#081321;border:0;font-weight:750}.btn:hover{filter:brightness(1.12)}.page{display:none}.page.active{display:block}.grid{display:grid;gap:14px}.stats{grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:16px}.card{background:linear-gradient(180deg,rgba(23,34,56,.96),rgba(17,26,44,.96));border:1px solid var(--line);border-radius:var(--radius);padding:17px;min-width:0}.statlabel{color:var(--muted);font-size:12px}.statnum{font-size:27px;font-weight:800;margin:5px 0 2px;letter-spacing:-.7px}.statnote{font-size:11px;color:var(--green)}.split{grid-template-columns:1.25fr .75fr}.sectionhead{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:2px 0 13px}.sectionhead h2{font-size:16px;margin:0}.sectionhead p{color:var(--muted);margin:3px 0 0;font-size:12px}.pill{font-size:10px;padding:4px 8px;border-radius:99px;background:#20314e;color:#b9d7ff;border:1px solid #314667;white-space:nowrap}.pill.green{color:#8ce6ba;background:#15382f;border-color:#235947}.pill.amber{color:#f6d38d;background:#3c3020;border-color:#66502e}.pill.red{color:#ffaaaa;background:#3d252c;border-color:#633541}.barrow{display:grid;grid-template-columns:140px 1fr 36px;gap:10px;align-items:center;margin:12px 0}.barlabel{font-size:12px;color:#d7e2f5}.track{height:8px;background:#26344c;border-radius:10px;overflow:hidden}.fill{height:100%;border-radius:10px;background:linear-gradient(90deg,var(--cyan),var(--blue))}.barvalue{text-align:right;color:var(--muted);font-size:11px}.muted{color:var(--muted)}.small{font-size:11px}.tablewrap{overflow:auto;border:1px solid var(--line);border-radius:13px}table{border-collapse:collapse;width:100%;min-width:720px}th,td{padding:11px 12px;text-align:left;border-bottom:1px solid #25324a;font-size:12px}th{color:#91a5c4;background:#111c30;font-weight:650;position:sticky;top:0}td{color:#dce6f7}tr:last-child td{border-bottom:0}tr:hover td{background:#18253c}.rank{font-weight:800;color:var(--cyan)}.tag{display:inline-block;border:1px solid #344867;background:#1a2942;color:#c5d7f4;border-radius:7px;padding:3px 7px;font-size:10px;margin:2px}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.field{background:#0d1729;border:1px solid #2a3a56;color:var(--text);border-radius:9px;padding:9px 11px;min-width:0}.field:focus{outline:1px solid var(--cyan)}input.field{min-width:190px}.two{grid-template-columns:repeat(2,minmax(0,1fr))}.three{grid-template-columns:repeat(3,minmax(0,1fr))}.workflow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.step{background:#111c30;border:1px solid var(--line);border-radius:13px;padding:14px;position:relative}.stepnum{width:25px;height:25px;display:grid;place-items:center;background:#1e3b50;color:var(--cyan);border-radius:8px;font-weight:800;margin-bottom:9px}.step h3{font-size:13px;margin:0 0 5px}.step p{font-size:11px;color:var(--muted);margin:0}.step .deliver{margin-top:10px;padding-top:9px;border-top:1px solid var(--line);font-size:10px;color:#b9d7ff}.list{display:grid;gap:8px}.listitem{display:flex;justify-content:space-between;gap:12px;padding:11px 12px;border:1px solid var(--line);background:#111c30;border-radius:11px}.listitem strong{font-size:12px}.listitem p{margin:3px 0 0;color:var(--muted);font-size:11px}.link{color:var(--cyan);text-decoration:none}.link:hover{text-decoration:underline}.callout{padding:13px 14px;border-radius:12px;border:1px solid #66502e;background:#2c271e;color:#f0d9a8;font-size:12px}.good{border-color:#245a48;background:#142e29;color:#b8f0d5}.danger{border-color:#683846;background:#321e29;color:#ffc0c0}.checkrow{display:flex;gap:9px;align-items:flex-start;padding:9px 0;border-bottom:1px solid #25324a;font-size:12px}.checkrow:last-child{border:0}.checkrow input{accent-color:#63d5e8;margin-top:3px}.progress{height:8px;background:#26344c;border-radius:9px;overflow:hidden;margin:10px 0}.progress>div{height:100%;background:linear-gradient(90deg,var(--green),var(--cyan));width:0}.kanban{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.kancol{background:#101a2c;border:1px solid var(--line);border-radius:13px;padding:12px;min-height:180px}.kancol h3{font-size:12px;margin:0 0 10px}.task{padding:10px;border-radius:9px;background:#1a2942;border:1px solid #2c4162;margin-bottom:8px;font-size:11px}.task small{display:block;color:var(--muted);margin-top:4px}.modal{display:none;position:fixed;inset:0;background:#050914c9;z-index:5;place-items:center;padding:18px}.modal.open{display:grid}.modalbox{width:min(620px,100%);max-height:90vh;overflow:auto;background:#111c30;border:1px solid #354867;border-radius:16px;padding:20px}.modalbox h2{margin:0 0 14px;font-size:18px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.formgrid label{display:grid;gap:5px;color:var(--muted);font-size:11px}.formgrid .wide{grid-column:1/-1}.footer{margin-top:22px;color:#7386a5;font-size:10px}.mobilebar{display:none}
+@media(max-width:1000px){.stats{grid-template-columns:repeat(2,1fr)}.workflow{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:1fr}}
+@media(max-width:700px){.shell{display:block}.side{position:fixed;z-index:4;left:-260px;width:248px;transition:left .2s}.side.open{left:0}.mobilebar{display:inline-flex}.main{padding:18px 13px 45px}.top{align-items:flex-start}.top h1{font-size:20px}.top p{font-size:12px}.actions .btn{padding:8px}.three,.two,.kanban{grid-template-columns:1fr}.barrow{grid-template-columns:110px 1fr 30px}.formgrid{grid-template-columns:1fr}.formgrid .wide{grid-column:auto}}
+</style>
+</head>
+<body>
+<div class="shell">
+<aside class="side" id="sidebar">
+ <div class="brand"><div class="logo">C↗U</div><div><strong>INTELLIGENCE HUB</strong><small>China → USA · YouTube OS</small></div></div>
+ <div class="navlabel">Workspace</div><nav class="nav">
+  <button class="active" data-page="dashboard"><span class="ico">◫</span> Tổng quan</button>
+  <button data-page="niches"><span class="ico">◈</span> Xếp hạng ngách</button>
+  <button data-page="channels"><span class="ico">◎</span> Kênh tham khảo</button>
+  <button data-page="china"><span class="ico">⌕</span> China Trend Radar</button>
+  <button data-page="pipeline"><span class="ico">⇢</span> China → USA Pipeline</button>
+  <button data-page="factory"><span class="ico">✳</span> AI Video Factory</button>
+ </nav>
+ <div class="navlabel">Execution</div><nav class="nav">
+  <button data-page="roadmap"><span class="ico">▦</span> Lộ trình 90 ngày</button>
+  <button data-page="board"><span class="ico">▤</span> Content Board</button>
+  <button data-page="governance"><span class="ico">⬡</span> Quality & Compliance</button>
+ </nav>
+ <div class="sidefoot">Bản prototype · dữ liệu mẫu có thể chỉnh sửa<br>Được lưu trên trình duyệt hiện tại.</div>
+</aside>
+<main class="main">
+ <header class="top"><div><div class="eyebrow">Creator intelligence / operating system</div><h1 id="pageTitle">Tổng quan hệ thống</h1><p id="pageDesc">Từ phát hiện cơ hội đến xuất bản video có giá trị nguyên bản cho khán giả Mỹ.</p></div><div class="actions"><button class="btn mobilebar" id="menuBtn">☰</button><button class="btn" id="exportBtn">Xuất dữ liệu</button><button class="btn primary" id="addIdeaBtn">＋ Thêm ý tưởng</button></div></header>
+
+<section class="page active" id="dashboard">
+ <div class="grid stats">
+  <div class="card"><div class="statlabel">Ngách đang theo dõi</div><div class="statnum" id="statNiches">10</div><div class="statnote">Danh mục ưu tiên ban đầu</div></div>
+  <div class="card"><div class="statlabel">Ý tưởng trong Content Board</div><div class="statnum" id="statIdeas">0</div><div class="statnote">Có thể thêm và quản lý</div></div>
+  <div class="card"><div class="statlabel">Pipeline sản xuất</div><div class="statnum">8 bước</div><div class="statnote">Research → Publish → Learn</div></div>
+  <div class="card"><div class="statlabel">Thị trường đích</div><div class="statnum">USA</div><div class="statnote">English · Shorts + Long-form</div></div>
+ </div>
+ <div class="grid split">
+  <div class="card"><div class="sectionhead"><div><h2>Top cơ hội để thử nghiệm</h2><p>Điểm chiến lược mẫu, không phải số liệu YouTube chính thức</p></div><span class="pill">Seed ranking</span></div><div id="dashBars"></div><button class="btn" onclick="showPage('niches')">Mở bảng xếp hạng →</button></div>
+  <div class="card"><div class="sectionhead"><div><h2>Operating principles</h2><p>Nguyên tắc vận hành hệ thống</p></div></div>
+   <div class="list">
+    <div class="listitem"><div><strong>01 · Demand first</strong><p>Không chọn ngách chỉ vì thấy viral ở Trung Quốc. Phải kiểm chứng nhu cầu tại Mỹ.</p></div></div>
+    <div class="listitem"><div><strong>02 · Original value</strong><p>Dùng nguồn Trung Quốc để phát hiện insight; viết lại bằng nghiên cứu và góc nhìn độc lập.</p></div></div>
+    <div class="listitem"><div><strong>03 · Small batch testing</strong><p>Thử một số format có kiểm soát trước khi mở rộng nhiều kênh.</p></div></div>
+    <div class="listitem"><div><strong>04 · Evidence-based scale</strong><p>Chỉ tăng sản lượng khi retention, CTR và chất lượng đã đạt ngưỡng.</p></div></div>
+   </div>
+  </div>
+ </div>
+ <div class="grid two" style="margin-top:14px">
+  <div class="card"><div class="sectionhead"><div><h2>Quy trình tổng thể</h2><p>8 cổng kiểm soát từ ý tưởng đến tối ưu</p></div></div><div class="workflow">
+   <div class="step"><div class="stepnum">1</div><h3>Discover</h3><p>Phát hiện tín hiệu tại Trung Quốc và Mỹ.</p></div>
+   <div class="step"><div class="stepnum">2</div><h3>Validate</h3><p>Kiểm tra nhu cầu và cạnh tranh tại Mỹ.</p></div>
+   <div class="step"><div class="stepnum">3</div><h3>Analyze</h3><p>Phân tích cấu trúc, insight, bình luận.</p></div>
+   <div class="step"><div class="stepnum">4</div><h3>Reframe</h3><p>Chọn góc kể chuyện riêng cho người Mỹ.</p></div>
+   <div class="step"><div class="stepnum">5</div><h3>Research</h3><p>Kiểm chứng facts bằng nguồn độc lập.</p></div>
+   <div class="step"><div class="stepnum">6</div><h3>Produce</h3><p>Script, voice, visual, edit, thumbnail.</p></div>
+   <div class="step"><div class="stepnum">7</div><h3>Publish</h3><p>Đóng gói, metadata, lịch xuất bản.</p></div>
+   <div class="step"><div class="stepnum">8</div><h3>Learn</h3><p>Đọc analytics và cập nhật playbook.</p></div>
+  </div></div>
+  <div class="card"><div class="sectionhead"><div><h2>Việc nên làm đầu tiên</h2><p>Checklist khởi động dự án</p></div><span class="pill green" id="checkCount">0/5</span></div><div id="starterChecks">
+   <label class="checkrow"><input type="checkbox"> Chọn 2 ngách để kiểm chứng, chưa mở nhiều kênh.</label>
+   <label class="checkrow"><input type="checkbox"> Lập danh sách 10 kênh tham khảo cho từng ngách.</label>
+   <label class="checkrow"><input type="checkbox"> Thu thập 30 chủ đề từ Trung Quốc và 30 chủ đề từ Mỹ.</label>
+   <label class="checkrow"><input type="checkbox"> Tạo 3 format video có bản sắc riêng.</label>
+   <label class="checkrow"><input type="checkbox"> Sản xuất batch thử nghiệm và đo dữ liệu.</label>
+  </div></div>
+ </div>
+</section>
+
+<section class="page" id="niches">
+ <div class="card"><div class="sectionhead"><div><h2>Bảng xếp hạng ngách nội dung</h2><p>Thang điểm 100 là đánh giá chiến lược khởi điểm: nhu cầu, khả năng kể chuyện, sản xuất, thương mại và độ bền.</p></div><span class="pill amber">Cần xác minh bằng dữ liệu thực</span></div>
+ <div class="filters"><input class="field" id="nicheSearch" placeholder="Tìm ngách..."><select class="field" id="nicheFilter"><option value="all">Tất cả nhóm</option><option>Technology</option><option>Business</option><option>History</option><option>Home & DIY</option><option>Lifestyle</option><option>Education</option></select><select class="field" id="nicheSort"><option value="score">Điểm cao → thấp</option><option value="ease">Dễ sản xuất → khó</option><option value="revenue">Tiềm năng thương mại</option></select></div>
+ <div class="tablewrap"><table><thead><tr><th>#</th><th>Micro-niche</th><th>Nhóm</th><th>Điểm</th><th>Độ dễ</th><th>Commercial</th><th>Format đề xuất</th><th>Trạng thái</th></tr></thead><tbody id="nicheRows"></tbody></table></div></div>
+ <div class="grid two" style="margin-top:14px"><div class="card"><h2 style="font-size:15px;margin-top:0">Cách đọc điểm</h2><p class="muted small">Điểm tổng hợp để ưu tiên nghiên cứu, không phải dự báo RPM hay cam kết tăng trưởng. Trước khi đầu tư, kiểm tra tối thiểu: 20 video gần đây của đối thủ, mức view tương đối so với subscriber, độ mới của chủ đề, chất lượng bình luận và khả năng tạo nội dung nguyên bản.</p></div><div class="card"><h2 style="font-size:15px;margin-top:0">Gợi ý shortlist</h2><p class="muted small">Bắt đầu với 2 ngách có lợi thế sản xuất và khả năng tạo khác biệt: <b>How Products Are Made</b> và <b>AI Automation for Small Businesses</b>. Có thể thay bằng Forgotten American History nếu bạn muốn storytelling hơn.</p></div></div>
+</section>
+
+<section class="page" id="channels">
+ <div class="card"><div class="sectionhead"><div><h2>Thư viện kênh tham khảo</h2><p>Các kênh/đường tìm kiếm để nghiên cứu format, storytelling và packaging. Không phải khuyến nghị sao chép.</p></div><span class="pill">Reference library</span></div>
+ <div class="filters"><input class="field" id="channelSearch" placeholder="Tìm kênh hoặc ngách..."><select class="field" id="channelNiche"><option value="all">Tất cả ngách</option><option>Factory & Engineering</option><option>Business & AI</option><option>History</option><option>Technology</option><option>Geography</option></select></div>
+ <div class="tablewrap"><table><thead><tr><th>Kênh tham khảo</th><th>Ngách</th><th>Nên nghiên cứu</th><th>Mở tìm kiếm</th></tr></thead><tbody id="channelRows"></tbody></table></div>
+ <p class="small muted" style="margin:12px 0 0">Ghi chú: nút mở sẽ tìm kiếm tên kênh trên YouTube để bạn xác minh đúng kênh, nội dung mới nhất và số liệu trực tiếp.</p></div>
+</section>
+
+<section class="page" id="china">
+ <div class="grid two">
+  <div class="card"><div class="sectionhead"><div><h2>China Trend Radar</h2><p>Chọn nguồn để phát hiện câu chuyện, sản phẩm, quy trình và insight.</p></div></div><div class="list" id="platformList"></div></div>
+  <div class="card"><div class="sectionhead"><div><h2>Search console</h2><p>Tạo truy vấn nghiên cứu theo chủ đề.</p></div></div>
+   <label class="small muted">Chủ đề / keyword</label><input class="field" style="width:100%;margin:6px 0 10px" id="chinaKeyword" placeholder="例如：智能工厂 / 机器人 / 家居改造">
+   <label class="small muted">Loại tín hiệu</label><select class="field" style="width:100%;margin:6px 0 12px" id="chinaType"><option>Chủ đề viral / trending</option><option>Quy trình sản xuất / nhà máy</option><option>Sản phẩm / tiêu dùng</option><option>Câu chuyện / nhân vật</option><option>Comment / pain point</option></select>
+   <button class="btn primary" onclick="makeChinaSearch()">Tạo bộ truy vấn</button><div id="chinaQueries" style="margin-top:12px"></div>
+  </div>
+ </div>
+ <div class="card" style="margin-top:14px"><div class="sectionhead"><div><h2>Phiếu thu thập tín hiệu Trung Quốc</h2><p>Lưu insight thủ công trước khi chuyển sang bước kiểm chứng tại Mỹ.</p></div></div>
+ <div class="formgrid"><label>Link nguồn<input class="field" id="sourceUrl" placeholder="https://..."></label><label>Nền tảng<select class="field" id="sourcePlatform"><option>Douyin</option><option>Bilibili</option><option>Xiaohongshu</option><option>Kuaishou</option><option>Weibo</option><option>WeChat</option><option>Khác</option></select></label><label class="wide">Tóm tắt tín hiệu<textarea class="field" id="sourceSummary" rows="3" placeholder="Chuyện gì đang thu hút chú ý? Vì sao?"></textarea></label><label class="wide">Góc có thể chuyển hóa sang Mỹ<textarea class="field" id="sourceAngle" rows="3" placeholder="Ví dụ: tác động tới nhà máy Mỹ, chi phí, người lao động, người tiêu dùng..."></textarea></label></div><button class="btn primary" style="margin-top:12px" onclick="saveSignal()">Lưu tín hiệu vào Content Board</button></div>
+</section>
+
+<section class="page" id="pipeline">
+ <div class="card"><div class="sectionhead"><div><h2>China → USA Transformation Pipeline</h2><p>Không dịch lại video nguồn. Chuyển từ tín hiệu thành một sản phẩm biên tập độc lập.</p></div><span class="pill green">Core workflow</span></div>
+ <div class="workflow">
+  <div class="step"><div class="stepnum">01</div><h3>Signal capture</h3><p>Lưu URL, nền tảng, ngày, chủ đề, chỉ dấu tương tác công khai.</p><div class="deliver">Output: Source brief</div></div>
+  <div class="step"><div class="stepnum">02</div><h3>AI deconstruction</h3><p>Trích chủ đề, hook, cấu trúc, câu hỏi khán giả, cảm xúc và insight.</p><div class="deliver">Output: Insight map</div></div>
+  <div class="step"><div class="stepnum">03</div><h3>US demand validation</h3><p>Đối chiếu YouTube, Google Trends, Reddit, báo chí và đối thủ Mỹ.</p><div class="deliver">Output: Demand score</div></div>
+  <div class="step"><div class="stepnum">04</div><h3>Original angle</h3><p>Đổi câu hỏi trung tâm, đối tượng, bối cảnh, luận điểm và lời hứa video.</p><div class="deliver">Output: New concept</div></div>
+  <div class="step"><div class="stepnum">05</div><h3>Independent research</h3><p>Kiểm chứng dữ kiện bằng nguồn gốc, chuyên gia, dữ liệu và tài liệu Mỹ.</p><div class="deliver">Output: Fact pack</div></div>
+  <div class="step"><div class="stepnum">06</div><h3>Script & storyboard</h3><p>Viết kịch bản tiếng Anh tự nhiên, nhịp kể, visual plan và CTA.</p><div class="deliver">Output: Production script</div></div>
+  <div class="step"><div class="stepnum">07</div><h3>Production</h3><p>Tạo voice, visual, motion, edit, sound design và thumbnail riêng.</p><div class="deliver">Output: Master video</div></div>
+  <div class="step"><div class="stepnum">08</div><h3>QA & publish</h3><p>Rights check, originality check, factual review, metadata và disclosure.</p><div class="deliver">Output: Publish-ready</div></div>
+ </div></div>
+ <div class="grid two" style="margin-top:14px">
+  <div class="card"><h2 style="font-size:15px;margin-top:0">Ví dụ chuyển hóa</h2><div class="list">
+   <div class="listitem"><div><strong>Tín hiệu Trung Quốc</strong><p>Video nhà máy tự động hóa có nhiều tương tác trên Bilibili.</p></div><span class="pill">Source</span></div>
+   <div class="listitem"><div><strong>Không nên làm</strong><p>Dịch lời thoại, dùng lại footage rồi thay giọng đọc/nhạc.</p></div><span class="pill red">Risk</span></div>
+   <div class="listitem"><div><strong>Góc Mỹ độc lập</strong><p>“Can US factories automate fast enough to compete?” Phân tích năng suất, chi phí lao động, robot và case study Mỹ.</p></div><span class="pill green">Original</span></div>
+  </div></div>
+  <div class="card"><h2 style="font-size:15px;margin-top:0">Prompt khung cho AI analyst</h2><textarea class="field" id="analystPrompt" style="width:100%;height:190px;resize:vertical">Analyze this source as market intelligence, not as material to copy.
+
+1. Identify the core topic, audience problem, emotional hook and factual claims.
+2. Separate reusable facts/ideas from protected expression, script, footage, graphics and music.
+3. Extract audience questions and unmet information needs.
+4. Find 5 independent angles for a US audience.
+5. Suggest US-specific data, examples and primary sources to verify.
+6. Propose a new thesis, title, outline and visual direction that do not imitate the source.
+7. Flag copyright, misinformation and YouTube monetization risks.
+
+Return an evidence table and clearly mark unknowns. Do not translate or reproduce the source script.</textarea><button class="btn" style="margin-top:9px" onclick="copyText('analystPrompt')">Sao chép prompt</button></div>
+ </div>
+</section>
+
+<section class="page" id="factory">
+ <div class="grid two">
+  <div class="card"><div class="sectionhead"><div><h2>AI Video Factory</h2><p>Chuỗi sản xuất theo từng asset, có bước duyệt của con người.</p></div><span class="pill">Production SOP</span></div>
+  <div class="list">
+   <div class="listitem"><div><strong>01 · Research pack</strong><p>Brief, nguồn kiểm chứng, số liệu, luận điểm, câu hỏi mở.</p></div><span class="pill">Research</span></div>
+   <div class="listitem"><div><strong>02 · Script package</strong><p>Hook 0–15s, narrative arc, scene-by-scene, pronunciation notes.</p></div><span class="pill">Writing</span></div>
+   <div class="listitem"><div><strong>03 · Visual package</strong><p>Shot list, stock/licensed assets, AI images, diagrams, maps, B-roll.</p></div><span class="pill">Visual</span></div>
+   <div class="listitem"><div><strong>04 · Audio package</strong><p>Voice direction, licensed music, SFX, loudness and subtitle check.</p></div><span class="pill">Audio</span></div>
+   <div class="listitem"><div><strong>05 · Edit & packaging</strong><p>Timeline, pacing, captions, thumbnail, title variants.</p></div><span class="pill">Edit</span></div>
+   <div class="listitem"><div><strong>06 · Human QA</strong><p>Fact-check, originality, rights, visual consistency, final approval.</p></div><span class="pill green">Gate</span></div>
+  </div></div>
+  <div class="card"><div class="sectionhead"><div><h2>Video brief generator</h2><p>Tạo brief mẫu cho một video mới.</p></div></div>
+   <div class="formgrid"><label class="wide">Chủ đề<input class="field" id="briefTopic" placeholder="How modern factories make lithium batteries"></label><label>Ngách<select class="field" id="briefNiche"><option>Factory & Engineering</option><option>AI & Business</option><option>History</option><option>Home Energy</option><option>Technology</option></select></label><label>Định dạng<select class="field" id="briefFormat"><option>Long-form 8–12 phút</option><option>Shorts 30–60 giây</option><option>Long-form 15–20 phút</option></select></label><label class="wide">Góc nhìn riêng<input class="field" id="briefAngle" placeholder="Giải thích chi phí, quy mô, tác động với người Mỹ..."></label></div><button class="btn primary" style="margin-top:12px" onclick="generateBrief()">Tạo video brief</button><div id="briefOutput" style="margin-top:12px"></div>
+  </div>
+ </div>
+ <div class="card" style="margin-top:14px"><h2 style="font-size:15px;margin-top:0">Production gate checklist</h2><div class="grid three">
+  <label class="checkrow"><input type="checkbox"> Kịch bản do mình phát triển, có luận điểm riêng.</label>
+  <label class="checkrow"><input type="checkbox"> Facts có nguồn đáng tin cậy và ngày truy cập.</label>
+  <label class="checkrow"><input type="checkbox"> Footage, music, images có quyền sử dụng.</label>
+  <label class="checkrow"><input type="checkbox"> Không chỉ dịch hoặc paraphrase video nguồn.</label>
+  <label class="checkrow"><input type="checkbox"> Video có narrative, commentary hoặc giá trị giáo dục rõ.</label>
+  <label class="checkrow"><input type="checkbox"> Đã kiểm tra disclosure AI/synthetic nếu cần.</label>
+ </div></div>
+</section>
+
+<section class="page" id="roadmap">
+ <div class="card"><div class="sectionhead"><div><h2>Lộ trình triển khai 90 ngày</h2><p>Đi theo cổng kiểm chứng. Không scale chỉ vì có vài video viral.</p></div><span class="pill">Pilot → Validate → Scale</span></div>
+ <div class="grid three">
+  <div class="step"><div class="stepnum">01–30</div><h3>Research & Pilot</h3><p>Chọn 2 ngách. Audit 10 kênh/ngách. Xây 3 format. Sản xuất batch nhỏ, đo phản hồi.</p><div class="deliver">Deliverable: 2 niche briefs + 6–10 video thử nghiệm</div></div>
+  <div class="step"><div class="stepnum">31–60</div><h3>Validate & Improve</h3><p>Giữ format có retention tốt. Thử thumbnail/title. Tìm series có thể phát triển thành playlist.</p><div class="deliver">Deliverable: 1 niche ưu tiên + SOP v1</div></div>
+  <div class="step"><div class="stepnum">61–90</div><h3>Systemize & Scale</h3><p>Chuẩn hóa brief, script, asset, QA. Giao việc theo vai trò. Chỉ mở kênh thứ hai khi quy trình ổn.</p><div class="deliver">Deliverable: Production system + scale decision</div></div>
+ </div></div>
+ <div class="grid two" style="margin-top:14px">
+  <div class="card"><h2 style="font-size:15px;margin-top:0">KPI cần theo dõi</h2><div class="list">
+   <div class="listitem"><div><strong>Packaging</strong><p>Impressions, CTR theo nguồn traffic, title/thumbnail test.</p></div></div>
+   <div class="listitem"><div><strong>Viewer satisfaction</strong><p>Average view duration, retention curve, returning viewers.</p></div></div>
+   <div class="listitem"><div><strong>Audience conversion</strong><p>Subscribers per 1,000 views, comments có chất lượng.</p></div></div>
+   <div class="listitem"><div><strong>Unit economics</strong><p>Giờ sản xuất/video, chi phí/video, doanh thu thực tế khi đủ điều kiện.</p></div></div>
+  </div></div>
+  <div class="card"><h2 style="font-size:15px;margin-top:0">Decision gate cuối mỗi tháng</h2><div class="checkrow"><input type="checkbox"> Có bằng chứng người Mỹ quan tâm chủ đề?</div><div class="checkrow"><input type="checkbox"> Có format tạo khác biệt rõ so với đối thủ?</div><div class="checkrow"><input type="checkbox"> Chất lượng video ổn định và không phụ thuộc footage rủi ro?</div><div class="checkrow"><input type="checkbox"> Chi phí sản xuất có thể kiểm soát?</div><div class="checkrow"><input type="checkbox"> Có ít nhất 3 ý tưởng tiếp theo cùng series?</div></div>
+ </div>
+</section>
+
+<section class="page" id="board">
+ <div class="card"><div class="sectionhead"><div><h2>Content Board</h2><p>Quản lý ý tưởng từ lúc phát hiện đến khi xuất bản.</p></div><button class="btn primary" onclick="openModal()">＋ Thêm ý tưởng</button></div>
+ <div class="kanban" id="kanban"></div></div>
+</section>
+
+<section class="page" id="governance">
+ <div class="grid two">
+  <div class="card"><div class="sectionhead"><div><h2>Originality & monetization gate</h2><p>Kiểm tra nội dung trước khi sản xuất và trước khi mở rộng.</p></div><span class="pill red">Critical</span></div>
+  <div class="callout danger"><b>Nguyên tắc quan trọng:</b> Dịch video Trung Quốc, thay giọng đọc, đổi nhạc, cắt lại hoặc thêm AI visuals không tự động biến video thành nội dung nguyên bản. Có permission cũng không đồng nghĩa chắc chắn đạt điều kiện kiếm tiền.</div>
+  <div class="checkrow"><input type="checkbox"> Video có câu hỏi/luận điểm riêng, không chỉ kể lại nguồn.</div>
+  <div class="checkrow"><input type="checkbox"> Có nghiên cứu độc lập, facts được xác minh.</div>
+  <div class="checkrow"><input type="checkbox"> Có commentary, phân tích, giáo dục hoặc storytelling thực chất.</div>
+  <div class="checkrow"><input type="checkbox"> Người xem nhận được giá trị khác biệt so với nguồn.</div>
+  <div class="checkrow"><input type="checkbox"> Không dùng footage/nhạc/ảnh khi chưa có quyền hoặc căn cứ hợp lệ.</div>
+  <div class="checkrow"><input type="checkbox"> Không sản xuất hàng loạt video template với khác biệt hời hợt.</div>
+  </div>
+  <div class="card"><h2 style="font-size:15px;margin-top:0">Nguồn chính sách & công cụ</h2>
+   <div class="list">
+    <div class="listitem"><div><strong>YouTube Channel Monetization Policies</strong><p>Inauthentic content, reused content, channel review.</p><a class="link" target="_blank" rel="noopener" href="https://support.google.com/youtube/answer/1311392">Mở YouTube Help ↗</a></div></div>
+    <div class="listitem"><div><strong>YouTube altered or synthetic content</strong><p>Disclosure khi nội dung realistic bị altered hoặc synthetic thuộc diện yêu cầu.</p><a class="link" target="_blank" rel="noopener" href="https://support.google.com/youtube/answer/14328491">Mở hướng dẫn ↗</a></div></div>
+    <div class="listitem"><div><strong>Google Trends</strong><p>So sánh nhu cầu tìm kiếm theo khu vực Mỹ.</p><a class="link" target="_blank" rel="noopener" href="https://trends.google.com/trends/">Mở Google Trends ↗</a></div></div>
+    <div class="listitem"><div><strong>YouTube Studio</strong><p>Đo hiệu suất thực tế sau xuất bản.</p><a class="link" target="_blank" rel="noopener" href="https://studio.youtube.com/">Mở Studio ↗</a></div></div>
+   </div>
+  </div>
+ </div>
+ <div class="card" style="margin-top:14px"><h2 style="font-size:15px;margin-top:0">Risk classification</h2><div class="grid three">
+  <div class="step"><span class="pill green">Low risk</span><h3 style="margin-top:10px">Idea & facts</h3><p>Chủ đề, sự kiện, quy trình, dữ kiện công khai – tự nghiên cứu và trình bày độc lập.</p></div>
+  <div class="step"><span class="pill amber">Review required</span><h3 style="margin-top:10px">Licensed clips</h3><p>Clip có license/permission. Vẫn cần kiểm tra điều khoản và thêm giá trị biên tập đáng kể.</p></div>
+  <div class="step"><span class="pill red">High risk</span><h3 style="margin-top:10px">Re-upload / translation</h3><p>Dùng lại video, script, nhạc, đồ họa hoặc bản dịch sát nguồn mà không có quyền/cải biến thực chất.</p></div>
+ </div></div>
+</section>
+<div class="footer">Prototype v1.0 · Ranking và ví dụ kênh là dữ liệu khởi tạo để nghiên cứu, không phải số liệu realtime. Không có kết nối API tự động trong bản offline này.</div>
+</main></div>
+
+<div class="modal" id="ideaModal"><div class="modalbox"><div style="display:flex;justify-content:space-between;align-items:center"><h2>Thêm ý tưởng nội dung</h2><button class="btn" onclick="closeModal()">✕</button></div>
+ <div class="formgrid"><label class="wide">Tiêu đề / chủ đề<input class="field" id="ideaTitle" placeholder="Why American factories are turning to robots"></label><label>Ngách<select class="field" id="ideaNiche"><option>Factory & Engineering</option><option>AI & Business</option><option>History</option><option>Home Energy</option><option>Technology</option><option>Geography</option><option>Other</option></select></label><label>Trạng thái<select class="field" id="ideaStatus"><option>Inbox</option><option>Research</option><option>Ready</option><option>Published</option></select></label><label class="wide">Nguồn / URL<input class="field" id="ideaSource" placeholder="https://..."></label><label class="wide">Góc nhìn riêng<textarea class="field" id="ideaAngle" rows="3" placeholder="Điểm khác biệt và giá trị cho người xem Mỹ..."></textarea></label></div><div style="display:flex;justify-content:flex-end;gap:8px;margin-top:15px"><button class="btn" onclick="closeModal()">Hủy</button><button class="btn primary" onclick="saveIdea()">Lưu ý tưởng</button></div>
+</div></div>
+
+<script>
+const niches=[
+{name:"How Products Are Made",group:"Education",score:92,ease:78,revenue:82,format:"Factory tours · process explainers",status:"Ưu tiên thử"},
+{name:"AI Automation for Small Businesses",group:"Technology",score:91,ease:82,revenue:94,format:"Tutorial · case study · workflow",status:"Ưu tiên thử"},
+{name:"Home Energy Savings",group:"Home & DIY",score:88,ease:74,revenue:91,format:"Cost breakdown · explainer",status:"Ưu tiên thử"},
+{name:"Forgotten American History",group:"History",score:86,ease:80,revenue:70,format:"Mini documentary · mystery",status:"Ưu tiên thử"},
+{name:"Honest Home Renovation Costs",group:"Home & DIY",score:85,ease:70,revenue:92,format:"Budget breakdown · case study",status:"Nghiên cứu"},
+{name:"Cybersecurity for Ordinary People",group:"Technology",score:84,ease:77,revenue:88,format:"Scam breakdown · how-to",status:"Nghiên cứu"},
+{name:"PC Optimization & Troubleshooting",group:"Technology",score:82,ease:88,revenue:78,format:"Fix guide · benchmark",status:"Nghiên cứu"},
+{name:"Technology for Seniors",group:"Lifestyle",score:80,ease:79,revenue:82,format:"Simple explainers · demos",status:"Nghiên cứu"},
+{name:"Credit Card Debt Education",group:"Business",score:79,ease:72,revenue:95,format:"Explainer · scenario",status:"Cần chuyên môn"},
+{name:"Strange Places & Geography",group:"Education",score:78,ease:84,revenue:68,format:"Visual documentary · map",status:"Nghiên cứu"},
+{name:"Industrial Machines & Mega Factories",group:"Education",score:78,ease:72,revenue:76,format:"Engineering documentary",status:"Nghiên cứu"},
+{name:"Side Hustles Tested",group:"Business",score:76,ease:75,revenue:84,format:"Experiment · results",status:"Nghiên cứu"},
+{name:"Lost Inventions & Technology",group:"History",score:75,ease:77,revenue:68,format:"Storytelling · explainer",status:"Nghiên cứu"},
+{name:"Satisfying Restoration",group:"Lifestyle",score:73,ease:62,revenue:66,format:"Process · before/after",status:"Rights dependent"},
+{name:"Sleep Science for Adults",group:"Lifestyle",score:71,ease:68,revenue:80,format:"Evidence explainer",status:"Cần fact-check"},
+{name:"Fishing for Beginners",group:"Lifestyle",score:69,ease:70,revenue:70,format:"Beginner guide · gear",status:"Nghiên cứu"}
+];
+const channels=[
+["Practical Engineering","Factory & Engineering","Giải thích kỹ thuật, cấu trúc câu chuyện, đồ họa","Practical Engineering"],
+["Real Engineering","Factory & Engineering","Hook, visual storytelling, cách giải thích công nghệ","Real Engineering"],
+["How It's Made","Factory & Engineering","Cấu trúc quy trình sản xuất và hình ảnh công nghiệp","How It's Made"],
+["Wendover Productions","Geography","Kể chuyện hệ thống, logistics, kinh tế và địa lý","Wendover Productions"],
+["Company Man","Business & AI","Case study doanh nghiệp, timeline và narrative","Company Man"],
+["Modern MBA","Business & AI","Phân tích mô hình kinh doanh và chiến lược","Modern MBA"],
+["AI Explained","Business & AI","Giải thích công nghệ AI, cấu trúc luận điểm","AI Explained"],
+["Matt Wolfe","Business & AI","Cách trình bày công cụ AI và cập nhật sản phẩm","Matt Wolfe"],
+["History Matters","History","Short-form history, nhịp kể và đơn giản hóa","History Matters"],
+["Kings and Generals","History","Bản đồ, timeline, documentary history","Kings and Generals"],
+["Bizarre History","History","Chủ đề lịch sử lạ và packaging","Bizarre History"],
+["Rome Unscrolled","History","Series lịch sử theo chủ đề","Rome Unscrolled"],
+["Veritasium","Technology","Câu hỏi khoa học, thí nghiệm và narrative","Veritasium"],
+["Technology Connections","Technology","Giải thích sản phẩm/công nghệ đời thường","Technology Connections"],
+["Technology for Seniors","Technology","Tìm kiếm các kênh tutorial hướng dẫn người lớn tuổi","technology for seniors YouTube"]
+];
+const platforms=[
+["Douyin","Phát hiện trend ngắn, sản phẩm, hành vi tiêu dùng và hook","https://www.douyin.com/"],
+["Bilibili","Video dài, công nghệ, nhà máy, cộng đồng chuyên sâu","https://www.bilibili.com/"],
+["Xiaohongshu","Review, lifestyle, pain point, quyết định mua hàng","https://www.xiaohongshu.com/"],
+["Kuaishou","Đời sống, nghề nghiệp, sản xuất, cộng đồng địa phương","https://www.kuaishou.com/"],
+["Weibo","Chủ đề đang được bàn luận, sự kiện và phản ứng xã hội","https://weibo.com/"],
+["WeChat","Bài viết chuyên sâu, nguồn ngành, hệ sinh thái nội dung","https://www.wechat.com/"]
+];
+let ideas=JSON.parse(localStorage.getItem("hubIdeas")||"[]");
+let signals=JSON.parse(localStorage.getItem("hubSignals")||"[]");
+const titles={dashboard:["Tổng quan hệ thống","Từ phát hiện cơ hội đến xuất bản video có giá trị nguyên bản cho khán giả Mỹ."],niches:["Xếp hạng ngách","Danh mục ưu tiên nghiên cứu, chấm điểm và lựa chọn thị trường."],channels:["Kênh tham khảo","Nghiên cứu format, packaging, storytelling và chiến lược nội dung."],china:["China Trend Radar","Phát hiện tín hiệu từ nền tảng Trung Quốc và lưu vào hệ thống."],pipeline:["China → USA Pipeline","Chuyển insight xuyên thị trường thành nội dung độc lập."],factory:["AI Video Factory","Chuẩn hóa brief, script, visual, audio, edit và QA."],roadmap:["Lộ trình 90 ngày","Từ pilot đến xác thực mô hình và mở rộng có kiểm soát."],board:["Content Board","Quản lý ý tưởng và trạng thái sản xuất."],governance:["Quality & Compliance","Bảo vệ tính nguyên bản, quyền sử dụng và khả năng kiếm tiền."]};
+function showPage(id){document.querySelectorAll(".page").forEach(x=>x.classList.toggle("active",x.id===id));document.querySelectorAll(".nav button").forEach(x=>x.classList.toggle("active",x.dataset.page===id));document.getElementById("pageTitle").textContent=titles[id][0];document.getElementById("pageDesc").textContent=titles[id][1];document.getElementById("sidebar").classList.remove("open");if(id==="board")renderBoard()}
+document.querySelectorAll(".nav button").forEach(b=>b.addEventListener("click",()=>showPage(b.dataset.page)));
+document.getElementById("menuBtn").onclick=()=>document.getElementById("sidebar").classList.toggle("open");
+function renderNiches(){let q=(document.getElementById("nicheSearch").value||"").toLowerCase(),g=document.getElementById("nicheFilter").value,s=document.getElementById("nicheSort").value;let a=niches.filter(n=>(n.name+" "+n.group).toLowerCase().includes(q)&&(g==="all"||n.group===g));a.sort((x,y)=>y[s==="ease"?"ease":s==="revenue"?"revenue":"score"]-x[s==="ease"?"ease":s==="revenue"?"revenue":"score"]);document.getElementById("nicheRows").innerHTML=a.map((n,i)=>`<tr><td class="rank">${i+1}</td><td><b>${n.name}</b></td><td>${n.group}</td><td><b>${n.score}/100</b></td><td>${n.ease}/100</td><td>${n.revenue}/100</td><td>${n.format}</td><td><span class="tag">${n.status}</span></td></tr>`).join("");}
+["nicheSearch","nicheFilter","nicheSort"].forEach(id=>document.getElementById(id).addEventListener("input",renderNiches));
+function renderDash(){document.getElementById("dashBars").innerHTML=niches.slice(0,6).map(n=>`<div class="barrow"><div class="barlabel">${n.name}</div><div class="track"><div class="fill" style="width:${n.score}%"></div></div><div class="barvalue">${n.score}</div></div>`).join("");document.getElementById("statIdeas").textContent=ideas.length;document.getElementById("statNiches").textContent=niches.length}
+function renderChannels(){let q=(document.getElementById("channelSearch").value||"").toLowerCase(),g=document.getElementById("channelNiche").value;document.getElementById("channelRows").innerHTML=channels.filter(c=>(c.join(" ").toLowerCase().includes(q))&&(g==="all"||c[1]===g)).map(c=>`<tr><td><b>${c[0]}</b></td><td>${c[1]}</td><td>${c[2]}</td><td><a class="link" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=${encodeURIComponent(c[3])}">Tìm trên YouTube ↗</a></td></tr>`).join("")}
+["channelSearch","channelNiche"].forEach(id=>document.getElementById(id).addEventListener("input",renderChannels));
+document.getElementById("platformList").innerHTML=platforms.map(p=>`<div class="listitem"><div><strong>${p[0]}</strong><p>${p[1]}</p></div><a class="link" target="_blank" rel="noopener" href="${p[2]}">Mở ↗</a></div>`).join("");
+function makeChinaSearch(){let k=document.getElementById("chinaKeyword").value.trim()||"factory automation";let t=document.getElementById("chinaType").value;let qs=[`${k} ${t} site:bilibili.com`,`"${k}" ${t} site:douyin.com`,`"${k}" ${t} site:xiaohongshu.com`,`"${k}" 美国 市场 趋势`];document.getElementById("chinaQueries").innerHTML=qs.map(q=>`<div class="listitem"><span class="small">${q}</span><button class="btn" onclick="window.open('https://www.google.com/search?q='+encodeURIComponent(${JSON.stringify(q)}),'_blank')">Tìm ↗</button></div>`).join("")}
+function saveSignal(){let s={title:document.getElementById("sourceSummary").value.trim()||"China signal",niche:"Research",status:"Inbox",source:document.getElementById("sourceUrl").value,angle:document.getElementById("sourceAngle").value,platform:document.getElementById("sourcePlatform").value};ideas.unshift(s);localStorage.setItem("hubIdeas",JSON.stringify(ideas));renderDash();alert("Đã lưu tín hiệu vào Content Board.");}
+function openModal(){document.getElementById("ideaModal").classList.add("open")}function closeModal(){document.getElementById("ideaModal").classList.remove("open")}
+document.getElementById("addIdeaBtn").onclick=openModal;
+function saveIdea(){let title=document.getElementById("ideaTitle").value.trim();if(!title){alert("Hãy nhập chủ đề.");return}ideas.unshift({title,niche:document.getElementById("ideaNiche").value,status:document.getElementById("ideaStatus").value,source:document.getElementById("ideaSource").value,angle:document.getElementById("ideaAngle").value});localStorage.setItem("hubIdeas",JSON.stringify(ideas));closeModal();["ideaTitle","ideaSource","ideaAngle"].forEach(id=>document.getElementById(id).value="");renderDash();renderBoard();showPage("board")}
+function renderBoard(){let cols=["Inbox","Research","Ready","Published"];let host=document.getElementById("kanban");host.innerHTML=cols.map(c=>`<div class="kancol"><h3>${c} <span class="pill">${ideas.filter(x=>x.status===c).length}</span></h3>${ideas.filter(x=>x.status===c).map((x,i)=>`<div class="task"><b>${esc(x.title)}</b><small>${esc(x.niche||"")} · ${esc(x.platform||"")}</small>${x.angle?`<small>${esc(x.angle)}</small>`:""}<div style="display:flex;gap:5px;flex-wrap:wrap;margin-top:8px"><select class="field" style="padding:5px;font-size:10px" onchange="moveIdea(${ideas.indexOf(x)},this.value)">${cols.map(z=>`<option ${z===x.status?"selected":""}>${z}</option>`).join("")}</select><button class="btn" style="padding:4px 7px;font-size:10px" onclick="deleteIdea(${ideas.indexOf(x)})">Xóa</button>${x.source?`<a class="link small" href="${esc(x.source)}" target="_blank" rel="noopener">Nguồn ↗</a>`:""}</div></div>`).join("")}</div>`).join("")}
+function moveIdea(i,v){ideas[i].status=v;localStorage.setItem("hubIdeas",JSON.stringify(ideas));renderBoard();renderDash()}function deleteIdea(i){ideas.splice(i,1);localStorage.setItem("hubIdeas",JSON.stringify(ideas));renderBoard();renderDash()}
+function esc(s){return String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function generateBrief(){let t=document.getElementById("briefTopic").value.trim()||"[Video topic]",n=document.getElementById("briefNiche").value,f=document.getElementById("briefFormat").value,a=document.getElementById("briefAngle").value||"A distinct US-specific angle";let txt=`VIDEO BRIEF\\nTopic: ${t}\\nNiche: ${n}\\nFormat: ${f}\\nOriginal angle: ${a}\\n\\n1. Audience: US viewers interested in ${n}.\\n2. Promise: Explain one clear question with evidence.\\n3. Hook: Open with a surprising but verifiable fact or tension.\\n4. Structure: Hook → context → 3 key insights → US case study → implications → conclusion.\\n5. Research: Collect 3-5 credible independent sources; verify every numerical claim.\\n6. Visuals: Original diagrams, licensed footage, generated illustrative visuals and source citations.\\n7. QA: Rights, factual accuracy, originality, disclosure and audio checks.\\n8. Packaging: Draft 3 title options and 2 thumbnail concepts.`;document.getElementById("briefOutput").innerHTML=`<textarea class="field" id="briefText" style="width:100%;height:250px">${esc(txt)}</textarea><button class="btn" style="margin-top:8px" onclick="copyText('briefText')">Sao chép brief</button>`}
+function copyText(id){let el=document.getElementById(id);el.select();document.execCommand("copy")}
+document.getElementById("exportBtn").onclick=()=>{let data={ideas,signals,exportedAt:new Date().toISOString(),note:"Local prototype export"};let blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"});let a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="youtube-intelligence-hub-data.json";a.click();URL.revokeObjectURL(a.href)};
+document.querySelectorAll("#starterChecks input").forEach(x=>x.addEventListener("change",()=>{let n=[...document.querySelectorAll("#starterChecks input")].filter(y=>y.checked).length;document.getElementById("checkCount").textContent=n+"/5"}));
+renderNiches();renderChannels();renderDash();renderBoard();
+</script>
+</body></html>

@@ -1,0 +1,6 @@
+node_modules/
+.env
+data/*.json
+.DS_Store
+*.log
+ytops-v3/
